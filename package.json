@@ -1,0 +1,13 @@
+{
+  "name": "20words-unlimited",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A browser-only, unlimited 20-word anagram game.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test",
+    "words": "node scripts/prepare-words.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
