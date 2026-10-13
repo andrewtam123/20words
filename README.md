@@ -2,6 +2,8 @@
 
 A mobile-friendly, browser-only anagram game with 20 words per game, inspired by [18words](https://18words.com/). This is an independent project and is not affiliated with the original game. Play as many games as you like. All gameplay runs on the device; hosting only serves the files in `dist/`. There is no backend, database, package installation, or runtime dependency.
 
+For agent handoff, see [AGENTS.md](AGENTS.md). [NEXT_STEPS.md](NEXT_STEPS.md) describes planned offline caching, a predefined dictionary catalog, incremental custom builds with local saves and share/import links, and two-player battle mode over a network. Built-in 20-word Easy / Medium / Hard builds replace the earlier standalone difficulty-mode proposal. Battle will use shared words and award each round's point to its first valid solver; it will require live communication in addition to static hosting. These features are not implemented yet.
+
 ## Run locally
 
 Use Node.js 20 or newer:
@@ -44,7 +46,7 @@ There is **no service worker or offline caching feature**, and offline launch is
 
 ## GitHub Pages
 
-The site is ready to deploy, but no remote repository or live deployment is configured by this implementation.
+The repository is [andrewtam123/20words](https://github.com/andrewtam123/20words). The included `.github/workflows/pages.yml` workflow publishes `dist/`; confirm the current deployment status in GitHub Actions. There is no need to add a separate Static HTML or Jekyll workflow.
 
 1. Put this project in a GitHub repository with a `main` branch and push it.
 2. In **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**.
